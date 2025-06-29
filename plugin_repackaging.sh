@@ -144,7 +144,7 @@ repackage(){
 install_unzip(){
 	if ! command -v unzip &> /dev/null; then
 		echo "Installing unzip ..."
-		yum -y install unzip
+		apt -y install unzip
 		if [ $? -ne 0 ]; then
 			echo "Install unzip failed."
 			exit 1
